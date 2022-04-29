@@ -1,3 +1,85 @@
+:root {
+  --almost-white: hsl(0, 0%, 98%);
+  --medium-gray: hsl(0, 0%, 41%);
+  --almost-black: hsl(0, 0%, 8%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+}
+
+.header {
+  width: 100vw;
+  padding: 0 3em;
+}
+
+.header-logo {
+  padding-top: 1.6em;
+}
+
+.header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.header > a {
+  float: left;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  padding-top: 1em;
+  margin-left: 8em;
+  list-style: none;
+}
+
+.navigation-items {
+  color: var(--medium-gray);
+  margin-top: 1.5px;
+  margin-left: 3em;
+}
+
+.navigation-items > a {
+  color: var(--medium-gray);
+  text-decoration: none;
+}
+
+.navigation-items-right {
+  margin-left: auto;
+}
+
+.navigation-items:hover {
+  color: var(--almost-black);
+}
+
+.btn {
+  border-radius: 15px;
+  padding: 0.8em 1.5em;
+}
+
+.btn-register {
+  margin-top: 0;
+  border: 2px solid var(--medium-gray);
+  background-color: #fff;
+  color: var(--medium-gray);
+}
+
+.dropdown {
+  cursor: pointer;
+}
+
+.dropdown::after {
+  content: url("./images/icon-arrow-down.svg");
+  margin: 0.5em;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
