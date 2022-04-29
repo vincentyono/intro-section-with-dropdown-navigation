@@ -98,6 +98,7 @@ body {
 }
 
 .hero-left {
+  position: relative;
   padding-top: 10em;
   padding-left: 5em;
   padding-right: 3em;
@@ -136,7 +137,8 @@ body {
 }
 
 .hero-left-sponsors {
-  margin-top: 9em;
+  position: absolute;
+  bottom: 0;
 }
 
 .hero-left-sponsors-items {
