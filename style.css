@@ -13,6 +13,10 @@
   font-family: "Epilogue", sans-serif;
 }
 
+body {
+  background-color: var(--almost-white);
+}
+
 .header {
   width: 100vw;
   padding: 0 3em;
@@ -78,6 +82,61 @@
 .dropdown::after {
   content: url("./images/icon-arrow-down.svg");
   margin: 0.5em;
+}
+
+.hero {
+  display: flex;
+  width: 100%;
+}
+
+.hero-left {
+  padding: 10em;
+}
+
+.hero-left > h1 {
+  font-size: 5rem;
+  display: block;
+  color: var(--almost-black);
+}
+
+.hero-left > p {
+  margin: 2.5em 0 3.5em 0;
+  max-width: 45ch;
+  font-size: 1.125rem;
+  color: var(--medium-gray);
+}
+
+.btn-learn-more {
+  padding: 0.8em 1.8em;
+  font-size: 1.125rem;
+  font-weight: bold;
+  background-color: var(--almost-black);
+  color: var(--almost-white);
+  border: solid 1px var(--almost-black);
+}
+
+.btn-learn-more:hover {
+  cursor: pointer;
+}
+
+.btn-learn-more:active {
+  background: var(--almost-white);
+  color: var(--almost-black);
+}
+
+.hero-left-sponsors {
+  margin-top: 6em;
+}
+
+.hero-left-sponsors-items {
+  display: inline-block;
+  margin-right: 2em;
+  vertical-align: middle;
+}
+
+.hero-right {
+  width: 50%;
+  padding: 5em;
 }
 
 .attribution {
