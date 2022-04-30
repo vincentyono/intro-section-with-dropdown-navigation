@@ -13,7 +13,7 @@ const navigationItems = document.getElementsByClassName("navigation-items");
 featuresMenu.addEventListener("click", () => {
   const dropdownFeatures =
     document.getElementsByClassName("dropdown-features")[0];
-  if (window.screen.availWidth > 375) {
+  if (window.screen.availWidth > 660) {
     if (dropdownFeatures.style.display == "block") {
       featuresArrow.src = "./images/icon-arrow-down.svg";
       dropdownFeatures.style.display = "none";
@@ -43,7 +43,7 @@ featuresMenu.addEventListener("click", () => {
 companyMenu.addEventListener("click", () => {
   const dropdownCompany =
     document.getElementsByClassName("dropdown-company")[0];
-  if (window.screen.availWidth > 375) {
+  if (window.screen.availWidth > 660) {
     if (dropdownCompany.style.display == "block") {
       companyArrow.src = "./images/icon-arrow-down.svg";
       dropdownCompany.style.display = "none";
